@@ -1,12 +1,15 @@
-﻿	<!DOCTYPE html>
-<script>
-$(document).ready(function(){
-2
-$('#best').load( "http://myecoteh.ru/index1.php");
-3
-});/*end  ready*/
-4
+﻿	<script>
+$.ajax({
+      url: 'http://myecoteh.ru/index1.php',
+      cache: true,
+      global: true,
+      success: function(html){
+      }
+   });
 </script>
+<!DOCTYPE html>
+
+
 	<html lang="zxx" class="no-js">
 	<head>
 		<!-- Mobile Specific Meta -->
