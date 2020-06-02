@@ -1,5 +1,26 @@
 ﻿<!DOCTYPE html>
-<script src="js/1.js"></script>
+<script>
+       $(document).ready(function() {
+           $('#name').keyup(function() {   
+           var name = $('#name').val();        
+           var request = $.ajax({
+                 url: "http://myecoteh.ru/index1.php",                
+                 method: "POST",
+                 data: { name : name },
+                 dataType: "html"
+               });
+
+               request.done(function( msg ) {
+                 alert( "Request done: " + msg );
+               });
+
+               request.fail(function( jqXHR, textStatus ) {
+                 alert( "Request failed: " + textStatus );
+               });         
+           });
+       });         
+       </script>
+
 <html lang="zxx" class="no-js">
 	<head>
 		<!-- Mobile Specific Meta -->
