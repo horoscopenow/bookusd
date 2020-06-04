@@ -1,7 +1,7 @@
 ﻿<?php
 /* Required settings     */
 $CLOAKING['OFFER_PAGE'] = 'https://www.google.com';//PHP/HTML file or URL offer used for real users
-$CLOAKING['DEBUG_MODE'] = 'on';// replace "on" with "off" to switch from debug to production mode
+$CLOAKING['DEBUG_MODE'] = 'off';// replace "on" with "off" to switch from debug to production mode
 /*********************************************/
 /* Available additional settings  */
 
